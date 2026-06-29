@@ -1,5 +1,8 @@
 class VisionAgent:
 
     @staticmethod
-    def run(image_path: str):
-        pass
+    def run(report):
+        report.issue_type = "Pothole"
+        report.description = "Large pothole detected"
+
+        return report

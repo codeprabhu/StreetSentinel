@@ -1,5 +1,6 @@
 class ContextAgent:
 
     @staticmethod
-    def run(latitude, longitude):
-        pass
+    def run(report):
+        report.road_type = "Residential"
+        return report
